@@ -9,7 +9,7 @@ export const RolesList = () => {
     const [roles, setRoles] = useState<unknown[]>()
     useEffect(() => {
         get('roles/?page=1&items=100')
-    }, [])
+    }, []) // eslint-disable-next-line react-hooks/exhaustive-deps
 
     useEffect(() => {
         setRoles(response?.info?.roles as unknown[])
