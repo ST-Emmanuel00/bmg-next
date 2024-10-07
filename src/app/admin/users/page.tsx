@@ -1,18 +1,17 @@
 import { RolesList } from "@/components/users/RoleList";
-import Link from "next/link";
 import { Suspense } from "react";
 
 async function getAllUsers() {
-    const res = await fetch('http://localhost:8000/api/users/?page=1&items=3&atribute=lastName');
-    const data = await res.json();
-    return { props: { data } };
+    // const res = await fetch('http://localhost:8000/api/users/?page=1&items=3&atribute=lastName');
+    // const data = await res.json();
+    // return { props: { data } };
 }
 
 async function Users() {
 
     const users = await getAllUsers()
 
-    console.log('users', users.props.data.info.users);
+    // console.log('users', users.props.data.info.users);
 
     return (
         <div>
