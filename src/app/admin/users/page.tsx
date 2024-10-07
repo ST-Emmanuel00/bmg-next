@@ -17,7 +17,7 @@ async function Users() {
     return (
         <div>
             <h3>Usuarios</h3>
-            {users.props.data.info.users.map((user: unknown) => (
+            {/* {users.props.data.info.users.map((user: unknown) => (
 
                 <Link href={`users/${user?.id}`}>
                     <p>
@@ -25,7 +25,7 @@ async function Users() {
                     </p>
                 </Link>
 
-            ))}
+            ))} */}
             <Suspense fallback={<h1>loading... </h1>}>
 
                 <RolesList />
