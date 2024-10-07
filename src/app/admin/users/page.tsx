@@ -16,6 +16,7 @@ async function Users() {
     return (
         <div>
             <h3>Usuarios</h3>
+            <p>Lista de usuarios existentes en bmg</p>
             {/* {users.props.data.info.users.map((user: unknown) => (
 
                 <Link href={`users/${user?.id}`}>
